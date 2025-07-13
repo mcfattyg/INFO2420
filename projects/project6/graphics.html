@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rent a Pet - Graphics</title>
+
+<style>
+
+
+	#thumbs, #image {
+		width: 1100px;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:500px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+	PrintButton1 = new Image
+	PrintButton2 = new Image
+	logo1 = new Image
+	logo2 = new Image
+if (document.images) {
+	PrintButton1.src = "images/print1.png"
+	PrintButton2.src = "images/print2.png"
+	logo1.src = "images/logo1.png"
+	logo2.src = "images/logo2.png"
+}
+
+
+		var imgArray = new Array(
+			'FuzzyCatLg.jpg',
+			'CatandDogLg.jpg',
+			'HuntingDogsLg.jpg',
+			'Snake1Lg.jpg'
+			
+
+		);
+
+
+		var titleArray = new Array(
+			'Grumpy Cat',
+			'Best Friends',
+			'Dog Days',
+			'Yellow Snake'
+			
+		);
+			
+		var imgPath = "images/full/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+		
+
+</script>
+
+
+</head>
+<body  onload="preloadImages()">
+
+<div align="center">
+
+<div>
+	<a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
+	onMouseOut="document.PrintButton.src=PrintButton1.src;">
+
+	<img src="images/print1.png" width="250" height="50" 
+	name="PrintButton" alt="PrintButton" style="border:none;">
+
+	</a>
+</div>
+
+
+<div id="logo">
+	<a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
+	onMouseOut="document.logo.src=logo1.src;">
+
+	<img src="images/logo1.png" width="133" height="126" 
+	name="logo" alt="logo" style="border:none;">
+
+	</a>
+</div>
+
+<br>
+<br>
+
+
+
+<div id="thumbs">
+		<img src="images/thumb/Cat2Sm.jpg" alt="Grumpy Cat" onmouseover="swapImage(0);">
+		<img src="images/thumb/CatandDogSm.jpg" alt="Cat and Dog" onmouseover="swapImage(1);">
+		<img src="images/thumb/HuntingDogsSm.jpg" alt="Hunting Dogs" onmouseover="swapImage(2);">
+		<img src="images/thumb/Snake1.jpg" alt="Snake" onmouseover="swapImage(3);">
+		
+</div>
+
+	<div id="image">
+
+		<img id="theImage" src="images/full/FuzzyCatLg.jpg" alt="Dog doing trick">
+		<h3 id="bottomText">Grumpy Cat</h3>
+	</div>
+
+<img src="images/2colback.png">
+
+
+</div>
+<br>
+<br>
+
+</body>
+</html>
