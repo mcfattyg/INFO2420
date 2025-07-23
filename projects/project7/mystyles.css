@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #FFF3E4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+    color: #000000;
+}
+
+header{
+    width: 900px;
+    height: 175px;
+    background-color: #68a4b9;
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+    border: solid thick black;
+}
+
+section{
+    width: 900px;
+    background-image: url('images/2colback.png');
+    background-repeat: repeat-y; 
+    overflow: hidden; 
+    margin: auto;
+}
+
+nav{
+    float: left;
+    width: 250px;
+    text-align: center;
+}
+
+article{
+    float: left;
+    width: 650px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    width: 900px;
+    height: 100px;
+    border: solid thick black;
+    background-color: #6b4c3b;
+    margin: auto;
+    
+}
+
+.logoleft{
+    float: left;
+    padding-top: 0px;
+    padding-left: 50px;
+}
+
+nav a{
+    border: 4px inset #CCCCCC;
+    background-color: #fff3e4;
+    line-height: 250%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: #6B4C3B;
+    border: 3px outset #cccccc;
+}
+
+
+h1{
+	color: #6B4C3B;
+}
+h2{
+	color: #6B4C3B;
+    margin-top: -100px;
+    
+}
+
+.imageleft{
+	float: left;
+	padding-right: 10px;
+}
+
+p{
+    text-align: left;
+}
+
+.ppad{
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.pfoot{
+    text-align: center;
+    color: white;
+}
+.imageright{
+	float: right;
+	padding-left: 10px;
+}
+a{
+	font-size: 110%;
+}
+a:link{
+	color: #68A4B9;
+}
+
+
+a:visited{
+	color: #68A4B9;
+}
+
+a:hover{
+	color: #D4537A;
+}
+
+
+.special-link-color:link{
+	color: #6b4c3b;
+}
+.special-link-color:visited{
+	color: #6b4c3b;
+}
+.special-link-color:hover{
+    color: #D4537A;
+}
+
+
+.center {
+	text-align: center;
+}
+.auto-style1{
+    float: left;
+    height: 150px;
+    padding: 0px 15px 10px 80px;
+    margin-left: 29px;
+}
+
+
+
+#thumbs, #image {
+		width: 650px;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:500px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+
+.added-space {
+  width: 100%;
+  height: 25px;
+  background-color: #f4a261;
+  margin: 20px auto;
+}
